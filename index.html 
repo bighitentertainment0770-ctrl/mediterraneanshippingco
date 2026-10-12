@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mediterraneanshippingco | Shipping from Barcelona</title>
+<meta name="description" content="mediterraneanshippingco is a Barcelona-based shipping company planning sea freight across the Mediterranean.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --deep:#0a2f3a;
+    --deeper:#06222b;
+    --sea:#1f6f78;
+    --foam:#e4efec;
+    --paper:#f7faf9;
+    --sun:#f4b63f;
+    --ink:#10252b;
+    --line:rgba(10,47,58,.18);
+    --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+    --body:"Newsreader",Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);font-size:1.125rem;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:2px}
+  .wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+  h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.025em}
+
+  /* Header */
+  header.top{position:absolute;inset:0 0 auto 0;z-index:5;padding:1.25rem 0}
+  header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  .brand{font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:-.01em;text-decoration:none;color:#fff}
+  .brand span{color:var(--sun)}
+  nav{display:flex;gap:1.5rem;font-family:var(--display);font-size:.95rem}
+  nav a{color:#fff;text-decoration:none;opacity:.85}
+  nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:5px;text-decoration-color:var(--sun)}
+
+  /* Hero */
+  .hero{position:relative;background:var(--deep);color:#fff;overflow:hidden;padding:8rem 0 4rem;min-height:92vh;display:flex;align-items:center}
+  .hero::before{
+    content:"";position:absolute;inset:0;opacity:.5;
+    background:repeating-radial-gradient(ellipse 140% 90px at 20% 120%,transparent 0 22px,rgba(255,255,255,.045) 23px 24px);
+  }
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:2rem;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.6vw,4.8rem);font-weight:800}
+  .hero h1 small{display:block;font-size:.34em;font-weight:400;letter-spacing:0;color:var(--sun);margin-bottom:1.1rem;font-family:var(--body);font-style:italic}
+  .hero p.lead{margin-top:1.6rem;max-width:30rem;color:#cfe1de;font-size:1.25rem}
+  .cta-row{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.9rem}
+  .btn{font-family:var(--display);font-weight:600;font-size:1rem;padding:.95rem 1.5rem;border-radius:999px;text-decoration:none;display:inline-block;transition:transform .15s ease,background .15s ease}
+  .btn:active{transform:scale(.97)}
+  .btn.sun{background:var(--sun);color:var(--deeper)}
+  .btn.sun:hover{background:#ffc75a}
+  .btn.ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+  .btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+  .chart{width:100%;height:auto;display:block}
+  .chart .route{fill:none;stroke:var(--sun);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s .4s cubic-bezier(.6,.1,.2,1) forwards}
+  .chart .route:nth-of-type(2){animation-delay:.9s}
+  .chart .route:nth-of-type(3){animation-delay:1.4s}
+  .chart .route:nth-of-type(4){animation-delay:1.9s}
+  .chart .port{fill:var(--deep);stroke:#fff;stroke-width:2}
+  .chart .home{fill:var(--sun);stroke:#fff;stroke-width:2}
+  .chart text{font-family:var(--display);font-size:13px;fill:#d8e8e5}
+  .chart text.homelabel{fill:#fff;font-weight:800;font-size:15px}
+  .chart .grid{stroke:rgba(255,255,255,.1);stroke-width:1;fill:none}
+  .chart .ring{fill:none;stroke:var(--sun);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:ping 2.8s 2.4s ease-out infinite;opacity:0}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(3);opacity:0}}
+  .chart-note{font-size:.9rem;color:#9fc0bc;margin-top:.6rem;font-style:italic}
+
+  /* Sections */
+  section{padding:6rem 0}
+  h2{font-size:clamp(2rem,4.2vw,3.2rem);font-weight:800;max-width:16ch}
+  .about{background:var(--paper)}
+  .about .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start}
+  .about p+p{margin-top:1.1rem}
+  .facts{margin-top:2rem;border-top:1px solid var(--line)}
+  .facts div{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+  .facts dt{font-family:var(--display);font-weight:600}
+  .facts dd{text-align:right;color:#35525a}
+
+  .offer{background:var(--foam)}
+  .offer-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:3rem}
+  .offer-head p{max-width:26rem;color:#35525a}
+  .services{list-style:none;border-top:2px solid var(--deep)}
+  .services li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr) auto;gap:1.5rem;align-items:baseline;padding:1.6rem 0;border-bottom:1px solid var(--line);transition:background .2s}
+  .services li:hover{background:rgba(255,255,255,.55)}
+  .services h3{font-size:1.5rem;font-weight:600;letter-spacing:-.015em}
+  .services p{color:#35525a;font-size:1.05rem}
+  .tag{font-family:var(--display);font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:999px;border:1.5px solid var(--sea);color:var(--sea);white-space:nowrap}
+
+  .contact{background:var(--deep);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:4rem;align-items:stretch}
+  .contact h2{color:#fff}
+  .contact dl{margin-top:2.2rem;display:grid;gap:1.4rem}
+  .contact dt{font-family:var(--display);font-size:.95rem;color:var(--sun);font-weight:600;margin-bottom:.15rem}
+  .contact dd{font-size:1.15rem;color:#e8f1ef}
+  .contact dd a{text-decoration-color:var(--sun);text-underline-offset:4px}
+  .ph{background:rgba(244,182,63,.16);padding:.05rem .45rem;border-radius:4px;border:1px dashed rgba(244,182,63,.7)}
+  .mapbox{min-height:380px;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.2);background:var(--deeper)}
+  .mapbox iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+  footer{background:var(--deeper);color:#8fb0ac;padding:1.8rem 0;font-size:.95rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+  /* WhatsApp */
+  .wa{position:fixed;right:1.1rem;bottom:1.1rem;z-index:20;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#06331a;font-family:var(--display);font-weight:600;padding:.8rem 1.15rem .8rem .95rem;border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28);transition:transform .15s}
+  .wa:hover{transform:translateY(-2px)}
+  .wa svg{width:26px;height:26px;fill:currentColor;flex:none}
+
+  @media (max-width:880px){
+    .hero{padding-top:7rem;min-height:auto}
+    .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:2.5rem}
+    .services li{grid-template-columns:1fr;gap:.5rem}
+    .tag{justify-self:start;margin-top:.4rem}
+    nav a:not(:last-child){display:none}
+    section{padding:4.2rem 0}
+  }
+  @media (max-width:420px){.wa span{display:none}.wa{padding:.85rem}}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .chart .route{animation:none;stroke-dashoffset:0}
+    .chart .ring{animation:none}
+    *{transition:none!important}
+  }
+</style>
+</head><section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title"><small>From Barcelona, across the sea</small>Cargo that crosses the Mediterranean without the runaround.</h1>
+        <p class="lead">We are building a sea freight service out of Barcelona, with clear communication from booking to the quay.</p>
+        <div class="cta-row">
+          <a class="btn sun" href="#contact">Ask about a shipment</a>
+          <a class="btn ghost" href="#offer">See what we plan to offer</a>
+        </div>
+      </div>
+
+      <figure>
+        <svg class="chart" viewBox="0 0 800 520" role="img" aria-label="Schematic route chart showing planned sea routes from Barcelona to Marseille, Genoa, Valencia and Algiers">
+          <path class="grid" d="M0 130H800M0 260H800M0 390H800M160 0V520M320 0V520M480 0V520M640 0V520"/>
+          <path class="route" pathLength="1" d="M330 205 Q372 120 440 112"/>
+          <path class="route" pathLength="1" d="M330 205 Q470 90 565 135"/>
+          <path class="route" pathLength="1" d="M330 205 Q270 230 262 305"/>
+          <path class="route" pathLength="1" d="M330 205 Q310 330 365 432"/>
+          <circle class="ring" cx="330" cy="205" r="14"/>
+          <circle class="port" cx="440" cy="112" r="7"/>
+          <circle class="port" cx="565" cy="135" r="7"/>
+          <circle class="port" cx="262" cy="305" r="7"/>
+          <circle class="port" cx="365" cy="432" r="7"/>
+          <circle class="home" cx="330" cy="205" r="11"/>
+          <text class="homelabel" x="240" y="190">Barcelona</text>
+          <text x="452" y="100">Marseille</text>
+          <text x="577" y="128">Genoa</text>
+          <text x="180" y="326">Valencia</text>
+          <text x="378" y="450">Algiers</text>
+        </svg>
+        <figcaption class="chart-note">Schematic only. Routes shown are planned and not to scale.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div>
+        <h2 id="about-title">A Barcelona shipping company, starting from the port up.</h2>
+        <dl class="facts">
+          <div><dt>Based in</dt><dd>Sants-Montjuïc, Barcelona</dd></div>
+          <div><dt>Focus</dt><dd>Mediterranean sea freight</dd></div>
+          <div><dt>Languages</dt><dd>English, Spanish, Catalan</dd></div>
+        </dl>
+      </div>
+      <div>
+        <p>mediterraneanshippingco is a new shipping company based in Barcelona, one of the busiest ports on the Mediterranean. We are setting up to move goods between Spain and the ports around the sea.</p>
+        <p>Our approach is simple: tell people plainly what will happen to their cargo, who is handling it, and when to expect news. Shipping has enough surprises already.</p>
+        <p>We are still shaping our service. If you have goods to move, or ideas about what you would need from a shipper, we would like to hear from you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE PLAN TO OFFER -->
+  <section class="offer" id="offer" aria-labelledby="offer-title">
+    <div class="wrap">
+      <div class="offer-head">
+        <h2 id="offer-title">What we plan to offer</h2>
+        <p>These are the services we are working towards. Tell us which would help you most, and we will build around real needs.</p>
+      </div>
+      <ul class="services">
+        <li>
+          <h3>Container freight</h3>
+          <p>Full container loads between Barcelona and Mediterranean ports, with booking and tracking handled for you.</p>
+          <span class="tag">Planned</span>
+        </li>
+        <li>
+          <h3>Shared containers</h3>
+          <p>Smaller shipments that share container space, for businesses that do not fill a whole container.</p>
+          <span class="tag">Planned</span>
+        </li>
+        <li>
+          <h3>Temperature-controlled cargo</h3>
+          <p>Refrigerated transport for food and other goods that need to stay cold on the crossing.</p>
+          <span class="tag">Planned</span>
+        </li>
+        <li>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">mediterranean<span>shipping</span>co</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#offer">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO --><h3>Customs and paperwork</h3>
+          <p>Help preparing the documents needed to clear goods at both ends of the route.</p>
+          <span class="tag">Planned</span>
+        </li>
+        <li>
+          <h3>Port-to-door delivery</h3>
+          <p>Road transport from the quay to your warehouse or shop, so the journey does not stop at the port.</p>
+          <span class="tag">Planned</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <h2 id="contact-title">How to reach us</h2>
+        <dl>
+          <div>
+            <dt>Visit</dt>
+            <dd>Carrer del Foc, 30<br>Sants-Montjuïc<br>08038 Barcelona, Spain</dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:[PHONE]"><span class="ph">[PHONE NUMBER]</span></a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:[EMAIL]"><span class="ph">[EMAIL ADDRESS]</span></a></dd>
+          </div>
+          <div>
+            <dt>Opening hours</dt>
+            <dd><span class="ph">[OPENING HOURS]</span></dd>
+          </div>
+        </dl>
+        <div class="cta-row">
+          <a class="btn sun" href="[LINK]" target="_blank" rel="noopener">Message us on WhatsApp</a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <iframe title="Map showing Carrer del Foc 30, Barcelona" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Carrer+del+Foc+30,+08038+Barcelona,+Spain&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> mediterraneanshippingco</span>
+    <span>Carrer del Foc, 30, 08038 Barcelona</span>
+  </div>
+</footer>
+
+<a class="wa" href="[LINK]" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 4.54 0 8.24 3.69 8.24 8.23 0 4.54-3.7 8.24-8.24 8.24Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
